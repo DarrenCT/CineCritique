@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class ReviewService {
     @Autowired
     private ReviewRepository reviewRepository;
-
+    @Autowired
     private MongoTemplate mongoTemplate;
     public Review createReview(String reviewBody, String imdbId){
         //create new review and insert into database
